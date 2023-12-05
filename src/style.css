@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 html {
   font-size: calc(100vw / 1440 * 10);
   scroll-behavior: smooth;
@@ -11,7 +12,13 @@ html {
 @font-face {
   font-family: 'satoshi-bold';
   src: url('./assets/fonts/Satoshi-Bold.woff2');
-  font-weight: 700;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'satoshi-medium';
+  src: url('./assets/fonts/Satoshi-Medium.woff2');
+  font-weight: 600;
 }
 
 * {
@@ -28,8 +35,64 @@ h1, h2, h3, h4, h5, h6, p, span {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 300ms ease;
 }
-img {
+img, video {
   width: 100%;
   height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.center {
+  text-align: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-center {
+  align-items: center;
+}
+.padding-0 {
+  padding: 0;
+}
+.margin-0 {
+  margin: 0;
+}
+.align-center {
+  justify-content: center;
+  align-items: center;
+}
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+.relative {
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: calc(100vw / 1023 * 10);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: calc(100vw / 650 * 10);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  html {
+    font-size: calc(100vw / 485 * 10);
+  }
 }

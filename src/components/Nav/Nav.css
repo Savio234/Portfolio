@@ -1,0 +1,82 @@
+#header-sm {
+    display: none;
+}
+.header {
+    /* padding: 2rem 8rem; */
+    height: 10rem;
+    justify-content: space-around;
+}
+.logo h1 {
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    font-family: 'satoshi-bold';
+}
+.nav-list {
+    gap: 2rem;
+}
+.nav-list li a:hover {
+    color: grey;
+    text-underline-offset: 1rem;
+    text-decoration: underline rgb(181, 181, 181);
+}
+.nav-list li a h3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-family: 'satoshi';
+}
+
+@media screen and (max-width: 1023px) {
+    
+}
+  
+@media screen and (max-width: 767px) {
+    #header-lg {
+        display: none;
+    }
+    #header-sm {
+        display: block;
+    }
+    .logo-sm-container {
+        padding: 2rem 3rem;
+    }
+    /* .logo {
+        width: 12rem;
+        height: 7rem;
+        margin-right: 0;
+    } */
+    .closeIcon {
+        position: absolute;
+        top: 4.5rem;
+        right: 4rem;
+        width: 4rem;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        margin-top: 4rem;
+        gap: 3rem;
+    }
+    .mob-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fbfbfd;
+        overflow-x: hidden;
+        transition: 0.7s;
+    }
+    .mob-nav-container {
+        justify-content: unset;
+        margin: 0 auto;
+        width: 100%;
+        padding: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+}

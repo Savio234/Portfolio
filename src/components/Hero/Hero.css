@@ -1,0 +1,76 @@
+.profile-container {
+    height: 80vh;
+    gap: 5rem;
+    justify-content: center;
+}
+.profile-picture {
+    height: 40rem;
+    width: 40rem;
+    margin: auto 0;
+}
+.profile-picture img {
+    border-radius: 50%;
+}
+.profile-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-family: 'satoshi';
+    text-align: center;
+}
+.profile-text h1 {
+    font-family: 'satoshi-bold';
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 900;
+}
+.profile-text h3 {
+    color: rgb(85, 85, 85);
+    font-weight: 900;
+    font-family: 'satoshi';
+    text-align: center;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.profile-btns {
+    gap: 1rem;
+}
+.profile-btn {
+    width: 16rem;
+    border-radius: 10rem;
+    border: 0.1rem solid rgb(53, 53, 53);
+    height: 5rem;
+    font-weight: 900;
+    font-family: 'satoshi';
+    cursor: pointer;
+}
+.cv:hover, .contact {
+    color: white;
+    background: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 650px) {
+    .profile-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-picture {
+        width: 25rem;
+        height: 25rem;
+    }
+    .profile-text h1 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .profile-text h3 {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+}
