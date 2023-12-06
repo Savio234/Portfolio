@@ -96,4 +96,24 @@
         font-size: 2.4rem;
         line-height: 3rem;
     }
+    .about-card {
+        width: 95%;
+        border-width: 0.2rem;
+    }
+    .about-card p {
+        font-weight: 700;
+    }
+    .about-card h3 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .about-text p {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+    .content-img {
+        width: 35rem;
+        height: 35rem;
+    }
 }

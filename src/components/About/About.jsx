@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-container">
         <p className='center'>Get to know more</p>
         <h1 className='center'>About Me</h1>
-        
+
         <div className="about-content flex align-center">
           <div className="content-img">
             <img src={profile} alt="" />
@@ -24,7 +24,7 @@ const About = () => {
                 </div>
                 <h3>Experience</h3>
                 <p>
-                  1+ years
+                  1½+ years
                   Frontend Development
                 </p>
               </div>

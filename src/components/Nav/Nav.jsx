@@ -1,6 +1,7 @@
 import React from 'react'
 import Open from '../../assets/svgs/hamburger.svg'
 import Close from '../../assets/svgs/close-icon.svg'
+import navLinks from '../../mock/navLinks'
 import './Nav.css'
 
 const Nav = () => {
@@ -12,24 +13,7 @@ const Nav = () => {
     const menu = document.querySelector(".mob-nav");
     menu.style.width = "0%";
   }
-  const navItems = [
-    {
-      name: 'About',
-      link: '#about'
-    },
-    {
-      name: 'Experience',
-      link: '#experience'
-    },
-    {
-      name: 'Projects',
-      link: '#project'
-    },
-    {
-      name: 'Contact',
-      link: '#contact'
-    }
-  ]
+  
   return (
     <div>
       <header id='header-lg'>
@@ -42,7 +26,7 @@ const Nav = () => {
           </div>
           <nav className='nav-container flex flex-center'>
             <ul className='flex flex-center nav-list'>
-              {navItems.map((navItem, index) =>
+              {navLinks.map((navItem, index) =>
                 <li key={index}>
                   <a href={navItem.link}>
                     <h3>{navItem.name}</h3>
@@ -89,7 +73,7 @@ const Nav = () => {
                 </div>
 
                 <ul className="nav-list flex flex-center flex-columnn flex-between">
-                  {navItems.map((navItem, index) =>
+                  {navLinks.map((navItem, index) =>
                     <li onClick={closeNav} key={index}>
                       <a href={navItem.link}>
                         <h3>{navItem.name}</h3>
