@@ -42,12 +42,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="profile-icons flex align-center">
-            <a href="https://www.linkedin.com/in/ezeifejafor-dominic-449b12259">
+            <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic-449b12259">
               <div className='profile-icon'>
                   <img src={linkedln} alt="" />
               </div>
             </a>
-            <a href="https://github.com/savio234">
+            <a target='blank' href="https://github.com/savio234">
               <div className='profile-icon'>
                 <img src={github} alt="" />
               </div>
