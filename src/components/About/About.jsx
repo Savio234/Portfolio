@@ -40,12 +40,12 @@ const About = () => {
             </div>
             <div className="about-text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
+                I'm Dominic Ezeifejafor, a passionate and detail-oriented Frontend Developer based in Lagos, Nigeria. 
+                I specialize in creating seamless, user-centric experiences using cutting-edge technologies 
+                such as React js and Next js. 
+                My goal is to make the web a more accessible and enjoyable space for everyone. 
+                Whether it's building pixel-perfect layouts or optimizing performance, 
+                I am dedicated to delivering top-notch solutions.
               </p>
             </div>
           </div>

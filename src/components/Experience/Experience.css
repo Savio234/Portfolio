@@ -1,0 +1,85 @@
+.experience-container {
+    height: 85vh;
+    padding: 0 8rem;
+}
+.experience-container p {
+    color: #555;
+    font-family: 'satoshi';
+}
+.experience-container h1 {
+    font-size: 4.8rem;
+    line-height: 5rem;
+    font-family: 'satoshi-bold';
+}
+.content-container {
+    gap: 3.2rem;
+    margin: 3.2rem 0;
+}
+.content-card {
+    padding: 2.4rem;
+    border: 0.2rem solid #A5A5A5;
+    border-radius: 3.2rem;
+}
+.content-card h3 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+.content-sm-card {
+    gap: 3.2rem;
+    justify-content: space-between;
+    padding: 0 3.2rem;
+}
+.icon {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.content-sm-card > div {
+    width: 17rem;
+    gap: 1rem;
+}
+.content-text h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-family: 'satoshi-bold';
+}
+.content-text p {
+    color: #555;
+    font-family: 'satoshi';
+}
+
+
+@media screen and (max-width: 1023px) {
+    .about-container h1 {
+        font-size: 4rem;
+    }
+    .experience-container {
+        padding: 0;
+    }
+    .content-sm-card {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .about-container h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+    .content-container {
+        flex-direction: column;
+    }
+    .experience-container {
+        height: auto;
+        margin: 6rem 0 8rem;
+    }
+}
+
+
+@media screen and (max-width: 485px) {
+    .about-container h1 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+}
