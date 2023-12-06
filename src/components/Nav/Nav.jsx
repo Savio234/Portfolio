@@ -1,7 +1,6 @@
 import React from 'react'
 import Open from '../../assets/svgs/hamburger.svg'
 import Close from '../../assets/svgs/close-icon.svg'
-import { Link } from 'react-router-dom'
 import './Nav.css'
 
 const Nav = () => {
@@ -13,24 +12,24 @@ const Nav = () => {
     const menu = document.querySelector(".mob-nav");
     menu.style.width = "0%";
   }
-  // const navItems = [
-  //   {
-  //     name: 'About',
-  //     link: '#about'
-  //   },
-  //   {
-  //     name: 'Experience',
-  //     link: '#experience'
-  //   },
-  //   {
-  //     name: 'Projects',
-  //     link: '#projects'
-  //   },
-  //   {
-  //     name: 'Contact',
-  //     link: '#contact'
-  //   }
-  // ]
+  const navItems = [
+    {
+      name: 'About',
+      link: '#about'
+    },
+    {
+      name: 'Experience',
+      link: '#experience'
+    },
+    {
+      name: 'Projects',
+      link: '#project'
+    },
+    {
+      name: 'Contact',
+      link: '#contact'
+    }
+  ]
   return (
     <div>
       <header id='header-lg'>
@@ -43,30 +42,14 @@ const Nav = () => {
           </div>
           <nav className='nav-container flex flex-center'>
             <ul className='flex flex-center nav-list'>
-              <li>
-                <a href="#about">
-                  <h3>About</h3>
-                </a>
-              </li>
-              <li>
-                <a href="#experience">
-                  <h3>Experience</h3>
-                </a>
-              </li>
-              <li>
-                <Link to='/projects'>
-                  {/* <a href="#project"> */}
-                    <h3>Projects</h3>
-                  {/* </a> */}
-                </Link>
-              </li>
-              <li>
-                <a href="#contact">
-                  <h3>Contact</h3>
-                </a>
-              </li>
+              {navItems.map((navItem, index) =>
+                <li key={index}>
+                  <a href={navItem.link}>
+                    <h3>{navItem.name}</h3>
+                  </a>
+                </li>
+              )}
             </ul>
-            {/* {navItems.map()} */}
           </nav>
         </div>
       </header>
@@ -94,7 +77,6 @@ const Nav = () => {
               <div className="flex flex-between">
                 <div className="logo-sm-container">
                   <div className="logo">
-                    {/* eslint-disable-next-line */}
                     <a href="/">
                       <h1>DE</h1>
                     </a>
@@ -107,26 +89,13 @@ const Nav = () => {
                 </div>
 
                 <ul className="nav-list flex flex-center flex-columnn flex-between">
-                  <li onClick={closeNav}>
-                    <a href="#about">
-                      <h3>About</h3>
-                    </a>
-                  </li>
-                  <li onClick={closeNav}>
-                    <a href="#experience">
-                      <h3>Experience</h3>
-                    </a>
-                  </li>
-                  <li onClick={closeNav}>
-                    <a href="#project">
-                      <h3>Projects</h3>
-                    </a>
-                  </li>
-                  <li onClick={closeNav}>
-                    <a href="#contact">
-                      <h3>Contact</h3>
-                    </a>
-                  </li>
+                  {navItems.map((navItem, index) =>
+                    <li onClick={closeNav} key={index}>
+                      <a href={navItem.link}>
+                        <h3>{navItem.name}</h3>
+                      </a>
+                    </li>
+                  )}
                 </ul>
             </div>
           </div>

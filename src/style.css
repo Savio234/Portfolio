@@ -41,6 +41,9 @@ img, video {
   width: 100%;
   height: 100%;
 }
+section {
+  height: 100vh;
+}
 
 .flex {
   display: flex;
