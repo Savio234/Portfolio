@@ -78,8 +78,13 @@
 
 
 @media screen and (max-width: 485px) {
-    .about-container h1 {
+    .experience-container h1 {
         font-size: 2.4rem;
         line-height: 3rem;
+    }
+    .content-card h3 {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 2rem;
     }
 }
