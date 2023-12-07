@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from '../../assets/svgs/profile-pic.png'
+// import me from '../../assets/svgs/me.jpeg'
 import Resume from '../../assets/svgs/resume-example.pdf'
 import github from '../../assets/svgs/github.png'
 import linkedln from '../../assets/svgs/linkedin.png'
@@ -30,7 +31,6 @@ const Hero = () => {
           <h3 className='margin-0'>Frontend web developer</h3>
           <div className="profile-btns flex flex-center">
             <div 
-              // onClick={handleDownload}
               onClick={() => window.open(Resume)}
               className="profile-btn flex align-center cv">
               Download CV
