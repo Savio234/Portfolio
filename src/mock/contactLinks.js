@@ -1,5 +1,5 @@
-import mail from '../assets/svgs/email.png'
-import linkedin from '../assets/svgs/linkedin.png'
+import mail from '../assets/svgs/email.svg'
+import linkedin from '../assets/svgs/linkedin.svg'
 import twitter from '../assets/svgs/twitter.svg'
 import WhatsApp from '../assets/svgs/whatsapp.svg'
 

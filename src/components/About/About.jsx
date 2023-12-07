@@ -1,6 +1,6 @@
 import React from 'react'
-import experienceIcon from '../../assets/svgs/experience.png'
-import educationIcon from '../../assets/svgs/education.png'
+import experienceIcon from '../../assets/svgs/experience.svg'
+import educationIcon from '../../assets/svgs/education.svg'
 import profile from '../../assets/svgs/about-pic.png'
 import './About.css'
 
