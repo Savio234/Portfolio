@@ -7,7 +7,7 @@
     line-height: 5rem;
     font-family: 'satoshi-bold';
 }
-.card-container {
+.projectCard-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
@@ -21,6 +21,12 @@
     .project-container h1 {
         font-size: 4rem;
     }
+    .projectCard-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        margin: 4rem auto 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -28,10 +34,11 @@
         font-size: 3.2rem;
         line-height: 4rem;
     }
-    .card-container {
+    .projectCard-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        margin: 4rem auto 0;
     }
 }
 

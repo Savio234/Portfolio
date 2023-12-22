@@ -10,7 +10,7 @@ const Projects = () => {
         <p className='center'>Browse My Recent</p>
         <h1 className='center'>Projects</h1>
       </div>
-      <div className="card-container">
+      <div className="projectCard-container">
         {projectData.map((item, index) =>
           <ProjectCard
             key={index}

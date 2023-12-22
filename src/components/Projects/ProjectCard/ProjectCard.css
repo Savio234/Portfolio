@@ -1,11 +1,11 @@
-.card {
+.projectCard {
     transition: all 0.3s ease-in-out;
     padding: 1.6rem;
     border: 0.2rem solid #333;
     text-align: center;
     border-radius: 2rem;
 }
-.card:hover {
+.cprojectCard:hover {
     scale: 1.02;
     transition: all 0.3s ease-in-out;
 }
@@ -44,4 +44,22 @@
     color: #FFF;
     background: #353535;
     transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+    .cardImage {
+        width: 40rem;
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cardImage {
+        width: 40rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    
 }

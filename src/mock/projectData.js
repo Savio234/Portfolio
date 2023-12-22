@@ -1,4 +1,6 @@
 import IMG1 from '../assets/svgs/1.jpg'
+import IMG2 from '../assets/svgs/ab.jpeg'
+import IMG3 from '../assets/svgs/blog.jpeg'
 // eslint-disable-next-line
 export default [
     {
@@ -9,14 +11,15 @@ export default [
     },
     {
         projectName: 'Gruve Ticketing system',
-        projectImg: IMG1,
+        projectImg: IMG2,
         repoLink: 'https://www.github.com/GruveWeb3/landing',
-        demoLink: 'https://test.gruve.vercel.app'
+        // demoLink: 'https://test.gruve.vercel.app'
+        demoLink: 'https://beta.gruve.events'
     },
     {
         projectName: 'Gruve Blog',
-        projectImg: IMG1,
+        projectImg: IMG3,
         repoLink: 'https://www.github.com/GruveWeb3/Gruve-Blog',
-        demoLink: 'https://www.blog.gruve.events'
+        demoLink: 'https://blog.gruve.events/'
     }
 ]
