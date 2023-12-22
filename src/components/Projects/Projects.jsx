@@ -1,4 +1,6 @@
 import React from 'react'
+import ProjectCard from './ProjectCard/ProjectCard'
+import projectData from '../../mock/projectData'
 import './Projects.css'
 
 const Projects = () => {
@@ -8,7 +10,17 @@ const Projects = () => {
         <p className='center'>Browse My Recent</p>
         <h1 className='center'>Projects</h1>
       </div>
-      Projects
+      <div className="card-container">
+        {projectData.map((item, index) =>
+          <ProjectCard
+            key={index}
+            title={item.projectName}
+            img={item.projectImg}
+            repoLink={item.repoLink}
+            demoLink={item.demoLink}
+          />
+        )}
+      </div>
     </section>
   )
 }
