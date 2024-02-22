@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from '../../assets/svgs/profile-pic.png'
 // import me from '../../assets/svgs/me.jpeg'
-import Resume from '../../assets/svgs/resume-example.pdf'
+import Resume from '../../assets/svgs/Resume.pdf'
 import github from '../../assets/svgs/github.svg'
 import linkedln from '../../assets/svgs/linkedin.svg'
 import './Hero.css'
