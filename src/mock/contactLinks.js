@@ -2,6 +2,7 @@ import mail from '../assets/svgs/email.svg'
 import linkedin from '../assets/svgs/linkedin.svg'
 import twitter from '../assets/svgs/twitter.svg'
 import WhatsApp from '../assets/svgs/whatsapp.svg'
+import Github from '../assets/svgs/github.svg'
 
 // eslint-disable-next-line
 export default [
@@ -17,12 +18,17 @@ export default [
     },
     {
         socials: 'Twitter',
-        link: 'https://www.twitter.com/@Dominic_Pete',
+        link: 'https://x.com/sasuke_devv',
         icon: twitter
     },
     {
         socials: 'WhatsApp',
         link: 'https://wa.me/+2348101837449',
         icon: WhatsApp
+    },
+    {
+        socials: 'Github',
+        link: 'https://www.github.com/savio234',
+        icon: Github
     },
 ]

@@ -10,19 +10,19 @@ export default [
     },
     {
         name: 'SASS',
-        level: 'Intermediate'
+        level: 'Proficient'
     },
     {
         name: 'Javascript',
-        level: 'Intermediate'
+        level: 'Proficient'
     },
     {
         name: 'Typescript',
-        level: 'Basic'
+        level: 'Proficient'
     },
     {
         name: 'Next JS',
-        level: 'Basic'
+        level: 'Intermediate'
     },
     {
         name: 'React',
@@ -30,7 +30,7 @@ export default [
     },
     {
         name: 'Tailwind CSS',
-        level: 'Basic'
+        level: 'Proficient'
     },
     {
         name: 'Chakra UI',

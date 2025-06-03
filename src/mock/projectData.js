@@ -4,22 +4,21 @@ import IMG3 from '../assets/svgs/blog.jpeg'
 // eslint-disable-next-line
 export default [
     {
-        projectName: 'Gruve Waitlist',
-        projectImg: IMG1,
-        repoLink: 'https://www.github.com/GruveWeb3/Gruve-Waitlist',
-        demoLink: 'https://www.gruve.events'
-    },
-    {
-        projectName: 'Gruve Ticketing system',
+        projectName: 'Sippy Life',
         projectImg: IMG2,
-        repoLink: 'https://www.github.com/GruveWeb3/landing',
-        // demoLink: 'https://test.gruve.vercel.app'
-        demoLink: 'https://beta.gruve.events'
+        repoLink: 'https://github.com/sippydrinks/sippy-frontend-v2',
+        demoLink: 'https://www.sippy.life'
     },
     {
-        projectName: 'Gruve Blog',
+        projectName: 'Sippy Blog',
         projectImg: IMG3,
-        repoLink: 'https://www.github.com/GruveWeb3/Gruve-Blog',
-        demoLink: 'https://blog.gruve.events/'
-    }
+        repoLink: 'https://github.com/sippydrinks/Sippy-blog',
+        demoLink: 'https://sippy-blog.vercel.app/'
+    },
+    {
+        projectName: 'Africa GovtechWeek 2025',
+        projectImg: IMG1,
+        repoLink: 'https://github.com/Techmybrand/govtech-africa',
+        demoLink: 'https://www.africagovtechweek.com'
+    },
 ]
