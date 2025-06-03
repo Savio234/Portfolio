@@ -24,7 +24,7 @@ const About = () => {
                 </div>
                 <h3>Experience</h3>
                 <p>
-                  1½+ years
+                  2 years
                   Frontend Development
                 </p>
               </div>
@@ -42,7 +42,7 @@ const About = () => {
               <p>
                 I'm Dominic Ezeifejafor, a passionate and detail-oriented Frontend Developer based in Lagos, Nigeria. 
                 I specialize in creating seamless, user-centric experiences using cutting-edge technologies 
-                such as React js and Next js. 
+                such as Next js, React js, typescript, tailwind etc. 
                 My goal is to make the web a more accessible and enjoyable space for everyone. 
                 Whether it's building pixel-perfect layouts or optimizing performance, 
                 I am dedicated to delivering top-notch solutions.

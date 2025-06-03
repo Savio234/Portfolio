@@ -22,11 +22,11 @@ export default [
     },
     {
         name: 'Next JS',
-        level: 'Intermediate'
+        level: 'Proficient'
     },
     {
         name: 'React',
-        level: 'Intermediate'
+        level: 'Proficient'
     },
     {
         name: 'Tailwind CSS',
@@ -38,7 +38,7 @@ export default [
     },
     {
         name: 'Git',
-        level: 'Intermediate'
+        level: 'Proficient'
     }
 ]
 // Hello there! 👋 I'm [Your Name], a passionate and detail-oriented Frontend Developer based in [Your Location]. With a love for crafting beautiful and intuitive user interfaces, I thrive on turning ideas into visually stunning, responsive, and functional web applications.
