@@ -1,6 +1,14 @@
 // eslint-disable-next-line
 export default [
     {
+        name: 'Typescript',
+        level: 'Proficient'
+    },
+    {
+        name: 'Javascript',
+        level: 'Proficient'
+    },
+    {
         name: 'HTML',
         level: 'Experienced'
     },
@@ -10,14 +18,6 @@ export default [
     },
     {
         name: 'SCSS',
-        level: 'Proficient'
-    },
-    {
-        name: 'Javascript',
-        level: 'Proficient'
-    },
-    {
-        name: 'Typescript',
         level: 'Proficient'
     },
     {

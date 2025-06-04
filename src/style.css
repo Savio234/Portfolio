@@ -106,4 +106,7 @@ ul {
   html {
     font-size: calc(100vw / 485 * 10);
   }
+  section {
+    padding: 0 2rem;
+  }
 }

@@ -3,13 +3,14 @@
     padding: 0 8rem;
 }
 .experience-container p {
-    color: #555;
+    color: #000;
     font-family: 'satoshi';
 }
 .experience-container h1 {
     font-size: 4.8rem;
     line-height: 5rem;
     font-family: 'satoshi-bold';
+    color: #4581F9;
 }
 .content-container {
     gap: 3.2rem;
@@ -19,6 +20,12 @@
     padding: 2.4rem;
     border: 0.2rem solid #A5A5A5;
     border-radius: 3.2rem;
+}
+.content-card:hover {
+    border: 0.2rem solid #4581F9;
+}
+.content-card:hover h3 {
+    color: #4581F9;
 }
 .content-card h3 {
     font-size: 2.8rem;

@@ -18,6 +18,7 @@ const Projects = () => {
             img={item.projectImg}
             repoLink={item.repoLink}
             demoLink={item.demoLink}
+            subtext={item?.subtext}
           />
         )}
       </div>
