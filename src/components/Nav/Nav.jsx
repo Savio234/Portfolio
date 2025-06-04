@@ -27,7 +27,7 @@ const Nav = () => {
           <nav className='nav-container flex flex-center'>
             <ul className='flex flex-center nav-list'>
               {navLinks.map((navItem, index) =>
-                <li key={index}>
+                <li className='nav-list-item' key={index}>
                   <a href={navItem.link}>
                     <h3>{navItem.name}</h3>
                   </a>
@@ -60,7 +60,7 @@ const Nav = () => {
             <div className="flex mob-nav-container flex-column">
               <div className="flex flex-between">
                 <div className="logo-sm-container">
-                  <div className="logo">
+                  <div className="logo_mob">
                     <a href="/">
                       <h1>DE</h1>
                     </a>

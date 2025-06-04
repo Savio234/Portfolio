@@ -9,7 +9,7 @@ export default [
         level: 'Experienced'
     },
     {
-        name: 'SASS',
+        name: 'SCSS',
         level: 'Proficient'
     },
     {
