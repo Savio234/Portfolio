@@ -121,9 +121,11 @@
         line-height: 3.2rem;
     }
     .about-text p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 400;
-        letter-spacing: 0.1rem;
+        line-height: 2.4rem;
+        text-align: justify;
+        color: #555;
     }
     .content-img {
         width: 35rem;

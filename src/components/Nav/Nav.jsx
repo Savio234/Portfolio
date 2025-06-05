@@ -15,7 +15,7 @@ const Nav = () => {
   }
   
   return (
-    <div>
+    <>
       <header id='header-lg'>
         <div className="header flex flex-center">
           <div className="logo">
@@ -54,6 +54,9 @@ const Nav = () => {
                 </span>
               </div>
             </div>
+            <div className='contact-btn'>
+              <h3>Contact</h3>
+            </div>
           </div>
 
           <div className="mob-nav flex">
@@ -74,7 +77,7 @@ const Nav = () => {
 
                 <ul className="nav-list flex flex-center flex-columnn flex-between">
                   {navLinks.map((navItem, index) =>
-                    <li onClick={closeNav} key={index}>
+                    <li className='nav-list-item' onClick={closeNav} key={index}>
                       <a href={navItem.link}>
                         <h3>{navItem.name}</h3>
                       </a>
@@ -85,7 +88,7 @@ const Nav = () => {
           </div>
         </div>
       </header>
-    </div>
+    </>
   )
 }
 

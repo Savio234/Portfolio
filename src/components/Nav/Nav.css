@@ -52,7 +52,7 @@
         display: block;
     }
     .logo-sm-container {
-        padding: 2rem 3rem;
+        padding: 1.6rem 2.4rem;
     }
     .logo_mob {
         position: relative;
@@ -65,6 +65,23 @@
         font-family: 'satoshi-bold';
         color: #4581F9;
     }
+    .contact-btn {
+        border-radius: 10rem;
+        height: 4.5rem;
+        width: 13.5rem;
+        display: flex;
+        transition: all 300ms ease-in-out;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: #4581F9;
+    }
+    .contact-btn h3 {
+        color: #FFF;
+        font-family: 'satoshi-bold';
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
     .closeIcon {
         position: absolute;
         top: 3.5rem;
@@ -72,7 +89,7 @@
         width: 4rem;
     }
     .hamburger {
-        display: block;
+        display: none;
     }
     .nav-list {
         flex-direction: column;
