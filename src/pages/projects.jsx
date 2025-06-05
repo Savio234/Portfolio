@@ -1,11 +1,10 @@
 import React from 'react'
-// import Project from '../components/Projects/Projects'
-import { Footer } from '../components'
+import { Footer, ProjectComponent } from '../components'
 
 const Projects = () => {
   return (
     <>
-      {/* <ProjectsComponent /> */}
+      <ProjectComponent />
       <Footer />
     </>
   )

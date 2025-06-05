@@ -14,6 +14,23 @@
     gap: 4rem;
     margin: 6.4rem 0 3rem;
 }
+.see-more-btn {
+    width: 100%;
+    margin: 6.2rem auto 0;
+}
+.btn {
+    width: 22rem;
+    border-radius: 10rem;
+    background: #4581F9;
+    height: 7.2rem;
+    cursor: pointer;
+}
+.btn h3 {
+    color: #FFF;
+    font-family: 'satoshi-bold';
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
 
 
 

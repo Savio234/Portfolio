@@ -11,7 +11,7 @@ const Projects = () => {
         <h1 className='center'>Projects</h1>
       </div>
       <div className="projectCard-container">
-        {projectData.map((item, index) =>
+        {projectData.slice(0, 3).map((item, index) =>
           <ProjectCard
             key={index}
             title={item.projectName}
@@ -19,8 +19,16 @@ const Projects = () => {
             repoLink={item.repoLink}
             demoLink={item.demoLink}
             subtext={item?.subtext}
+            type={item?.type}
           />
         )}
+      </div>
+      <div className='see-more-btn flex align-center'>
+        <a rel='noreferrer' href="/projects">
+          <div className='btn flex align-center'>
+            <h3>View projects</h3>
+          </div>
+        </a>
       </div>
     </section>
   )

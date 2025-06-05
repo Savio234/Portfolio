@@ -1,6 +1,6 @@
 .projectCard {
     transition: all 0.3s ease-in-out;
-    padding: 1.6rem;
+    padding: 2.4rem;
     border: 0.2rem solid #333;
     border-radius: 2.4rem;
     transition: all 0.3s ease-in-out;
@@ -18,12 +18,13 @@
     color: #4581F9;
 }
 .cardImage {
-    width: 36rem;
+    width: 100%;
     height: 36rem;
 }
 .cardImage img {
     object-fit: cover;
-    border-radius: 1.6rem;
+    border-radius: 2.4rem;
+    object-position: 0 0;
 }
 .card-header {
     margin: 1.6rem 0;
@@ -45,13 +46,17 @@
 }
 .btns {
     margin: 0 auto;
-    gap: 2.5rem;
+    gap: 2.4rem;
+    width: 100%;
+}
+.btns a {
+    width: 100%;
 }
 .card-btn {
-    width: 16rem;
+    width: 100%;
     border-radius: 10rem;
     border: 0.1rem solid #353535;
-    height: 5rem;
+    height: 5.6rem;
     font-weight: 900;
     font-family: 'satoshi-bold';
     cursor: pointer;
@@ -87,6 +92,9 @@
         font-size: 1.4rem;
         line-height: 2.4rem;
     }
+    .btns {
+        gap: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 485px) {
@@ -97,6 +105,9 @@
         background: #4581F9;
         border: 0;
     }
+    .btns a {
+        width: 100%;
+    }
     .git-btn:hover h6 {
         color: #FFF;
     }
@@ -106,5 +117,8 @@
     }
     .live-btn h6 {
         color: #FFF;
+    }
+    .card-btn {
+        width: 100%;
     }
 }

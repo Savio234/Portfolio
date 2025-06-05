@@ -38,17 +38,19 @@
     padding: 0 3.2rem;
 }
 .icon {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2rem;
+    height: 2rem;
 }
 .content-sm-card > div {
     width: 17rem;
     gap: 1rem;
+    align-items: center;
 }
 .content-text h2 {
     font-size: 2rem;
-    line-height: 2.8rem;
+    line-height: 2.4rem;
     font-family: 'satoshi-bold';
+    color: #000;
 }
 .content-text p {
     color: #555;
@@ -80,6 +82,10 @@
     .experience-container {
         height: auto;
         margin: 6rem 0 8rem;
+    }
+    .icon {
+        width: 1.6rem;
+        height: 1.6rem;
     }
 }
 

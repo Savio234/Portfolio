@@ -1,6 +1,6 @@
 import React from 'react'
 import experienceData from '../../mock/experienceData'
-import checkmark from '../../assets/svgs/checkmark.png'
+import checkmark from '../../assets/svgs/check.svg'
 import './Experience.css'
 
 const Experience = () => {
