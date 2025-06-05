@@ -1,8 +1,9 @@
-.footer-container {
-    margin: 2rem 0 4rem;
+.footer-wrapper {
+    background: #151515;
+    padding: 4rem 0 8rem;
 }
 .footer-container p {
-    color: #555;
+    color: #FFF;
     font-family: 'satoshi';
 }
 .footer-container nav {
@@ -15,6 +16,7 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
     font-family: 'satoshi-medium';
+    color: #FFF;
 }
 
 @media screen and (max-width: 1023px) {

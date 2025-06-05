@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div id='footer'>
+    <footer id='footer' className='footer-wrapper'>
       <div className="footer-container">
         <nav className='flex align-center'>
           <ul className='flex flex-center footer-nav-list'>
@@ -18,10 +18,10 @@ const Footer = () => {
           </ul>
         </nav>
         <p className='center'>
-          Copyright © 2023 Dominic Ezeifejafor. All Rights Reserved.
+          Copyright © 2024 Dominic Ezeifejafor. All Rights Reserved.
         </p>
       </div>
-    </div>
+    </footer>
   )
 }
 

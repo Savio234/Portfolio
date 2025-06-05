@@ -17,17 +17,18 @@ export default [
         repoLink: 'https://github.com/sippydrinks/Sippy-blog',
         demoLink: 'https://sippy-blog.vercel.app/',
     },
-    // {
-    //     projectName: 'Sippy Admin',
-    //     projectImg: IMG3,
-    //     subtext: 'A modern admin dashboard',
-    //     repoLink: 'https://github.com/sippydrinks/Sippy-blog',
-    //     demoLink: 'https://sippy-blog.vercel.app/',
-    // },
     {
         projectName: 'Africa GovtechWeek 2025',
         projectImg: IMG1,
+        subtext: 'Engineered the event website for Africa GovTech Week, serving as the central hub for attendee registration, schedule information, and fostering partnerships in the GovTech ecosystem',
         repoLink: 'https://github.com/Techmybrand/govtech-africa',
         demoLink: 'https://www.africagovtechweek.com',
     },
+    // {
+    //     projectName: 'Sippy Admin',
+    //     projectImg: IMG3,
+    //     subtext: 'Developed an intuitive and robust admin dashboard, streamlining the operational workflow of a rapidly growing drink e-commerce service. The platform provides administrators with powerful tools for detailed order management, dynamic product catalog updates, oversee customer accounts and precise inventory control, significantly enhancing efficiency for event deliveries nationwide.',
+    //     repoLink: 'https://github.com/sippydrinks/Sippy-blog',
+    //     demoLink: 'https://sippy-blog.vercel.app/',
+    // },
 ]

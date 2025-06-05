@@ -90,5 +90,21 @@
 }
 
 @media screen and (max-width: 485px) {
-    
+    .projectCard:hover {
+        translate: 0 0;
+    }
+    .git-btn:hover {
+        background: #4581F9;
+        border: 0;
+    }
+    .git-btn:hover h6 {
+        color: #FFF;
+    }
+    .live-btn {
+        background: #4581F9;
+        border: 0;
+    }
+    .live-btn h6 {
+        color: #FFF;
+    }
 }

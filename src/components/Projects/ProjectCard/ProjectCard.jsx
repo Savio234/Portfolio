@@ -15,12 +15,12 @@ const ProjectCard = ({img, title, subtext, repoLink, demoLink}) => {
         </div>
         <div className="btns flex align-center">
             <a target='_blank' rel='noreferrer' href={`${repoLink}`}>
-                <div className="card-btn flex align-center">
+                <div className="card-btn flex align-center git-btn">
                     <h6 className='card_btn-text'>Github</h6>
                 </div>
             </a>
             <a target='_blank' rel='noreferrer' href={demoLink}>
-                <div className="card-btn flex align-center">
+                <div className="card-btn flex align-center live-btn">
                     <h6 className='card_btn-text'>Live demo</h6>
                 </div>
             </a>

@@ -3,14 +3,14 @@ import { Hero, About, Experience, Contact, Footer, Projects } from '../component
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Hero />
       <About />
       <Experience />
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -24,7 +24,6 @@
     justify-content: center;
     cursor: pointer;
     background: #4581F9;
-    /* background: rgb(115,147,233); */
 }
 .nav-list-item:hover {
     background: #7393e9;
