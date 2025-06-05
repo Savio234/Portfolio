@@ -22,10 +22,17 @@
 }
 .card {
     gap: 0.8rem;
+    transition: all 300ms ease-in-out;
 }
 .card h3 {
     font-size: 2.4rem;
     line-height: 3.6rem;
+    font-family: 'satoshi';
+    color: #555;
+}
+.card:hover h3 {
+    color: #4581F9;
+    transition: all 300ms ease-in-out;
 }
 
 
