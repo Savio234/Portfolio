@@ -24,7 +24,7 @@ const Projects = () => {
         )}
       </div>
       <div className='see-more-btn flex align-center'>
-        <a rel='noreferrer' href="/projects">
+        <a target='_parent' rel='noreferrer' href="/projects">
           <div className='btn flex align-center'>
             <h3>View projects</h3>
           </div>

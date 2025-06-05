@@ -52,7 +52,7 @@
         display: block;
     }
     .logo-sm-container {
-        padding: 1.6rem 2.4rem;
+        padding: 2.4rem;
     }
     .logo_mob {
         position: relative;
@@ -76,7 +76,7 @@
         cursor: pointer;
         background: #4581F9;
     }
-    .contact-btn h3 {
+    .contact-btn a h3 {
         color: #FFF;
         font-family: 'satoshi-bold';
         font-size: 1.6rem;

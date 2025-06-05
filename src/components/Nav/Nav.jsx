@@ -55,7 +55,9 @@ const Nav = () => {
               </div>
             </div>
             <div className='contact-btn'>
-              <h3>Contact</h3>
+              <a href="#contact">
+                <h3>Contact</h3>
+              </a>
             </div>
           </div>
 
