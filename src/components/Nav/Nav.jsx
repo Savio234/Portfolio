@@ -2,6 +2,9 @@ import React from 'react'
 import Open from '../../assets/svgs/hamburger.svg'
 import Close from '../../assets/svgs/close-icon.svg'
 import navLinks from '../../mock/navLinks'
+import { useGlobalContext } from "../../contexts/AppContext";
+import light from '../../assets/svgs/lightmode.svg'
+import dark from '../../assets/svgs/darkmode.svg'
 import './Nav.css'
 
 const Nav = () => {
@@ -13,18 +16,25 @@ const Nav = () => {
     const menu = document.querySelector(".mob-nav");
     menu.style.width = "0%";
   }
+  const { theme, setTheme } = useGlobalContext();
+  const currentThemeIcon = theme === 'light' ? light : dark
+  const handleThemeToggle = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
   
   return (
     <>
       <header id='header-lg'>
-        <div className="header flex flex-center">
+        <div data-theme={theme} className="header flex flex-center">
           <div className="logo">
-            {/* eslint-disable-next-line */}
             <a href="/">
               <h1 className='margin-0 logo'>DE</h1>
             </a>
           </div>
           <nav className='nav-container flex flex-center'>
+            <div onClick={handleThemeToggle} className='theme-toggle-btn'>
+              <img alt='' src={currentThemeIcon} />
+            </div>
             <ul className='flex flex-center nav-list'>
               {navLinks.map((navItem, index) =>
                 <li className='nav-list-item' key={index}>
@@ -39,7 +49,7 @@ const Nav = () => {
       </header>
 
       <header id='header-sm'>
-        <div className="mob-header">
+        <div data-theme={theme} className="mob-header">
           <div className='flex flex-center flex-between logo-sm-container'>
             <div className="logo">
               <a href="/">
@@ -54,10 +64,16 @@ const Nav = () => {
                 </span>
               </div>
             </div>
-            <div className='contact-btn'>
-              <a href="#contact">
-                <h3>Contact</h3>
-              </a>
+
+            <div className='flex flex-center btns-container'>
+              <div onClick={handleThemeToggle} className='theme-toggle-btn'>
+                <img alt='' src={currentThemeIcon} />
+              </div>
+              <div className='contact-btn'>
+                <a href="#contact">
+                  <h3>Contact</h3>
+                </a>
+              </div>
             </div>
           </div>
 
