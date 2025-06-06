@@ -1,12 +1,14 @@
 import React from 'react'
+import { useGlobalContext } from "../../contexts/AppContext";
 import experienceIcon from '../../assets/svgs/experience.svg'
 import educationIcon from '../../assets/svgs/education.svg'
 import profile from '../../assets/svgs/about-pic.png'
 import './About.css'
 
 const About = () => {
+  const { theme } = useGlobalContext();
   return (
-    <section id='about'>
+    <section id='about' data-theme={theme} className='about-wrapper'>
       <div className="about-container">
         <p className='center'>Get to know more</p>
         <h1 className='center'>About Me</h1>
@@ -19,20 +21,38 @@ const About = () => {
           <div className='flex flex-column'>
             <div className="about-education flex flex-center">
               <div className="about-card center flex-column flex align-center">
-                <div className="card-icon">
-                  <img src={experienceIcon} alt="" />
-                </div>
-                <h3>Experience</h3>
+                {theme === 'light' && (
+                  <div className="card-icon">
+                    <img src={experienceIcon} alt="" />
+                  </div>
+                )}
+                {theme === 'dark' && (
+                  <div className='card-icon-wrapper flex align-center'>
+                    <div className="card-icon">
+                      <img src={experienceIcon} alt="" />
+                    </div>
+                  </div>
+                )}
+                <h3 className='h3'>Experience</h3>
                 <p>
                   2 years
                   Frontend Development
                 </p>
               </div>
               <div className="about-card center flex-column flex align-center">
-                <div className="card-icon">
-                  <img src={educationIcon} alt="" />
-                </div>
-                <h3>Education</h3>
+                {theme === 'light' && (
+                  <div className="card-icon">
+                    <img src={educationIcon} alt="" />
+                  </div>
+                )}
+                {theme === 'dark' && (
+                  <div className='card-icon-wrapper flex align-center'>
+                    <div className="card-icon">
+                      <img src={educationIcon} alt="" />
+                    </div>
+                  </div>
+                )}
+                <h3 className='h3'>Education</h3>
                 <p>
                   B.Eng Bachelors Degree
                 </p>

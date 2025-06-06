@@ -1,6 +1,6 @@
 import React from 'react'
 import profile from '../../assets/svgs/profile-pic.png'
-// import me from '../../assets/svgs/me.jpeg'
+import { useGlobalContext } from "../../contexts/AppContext";
 import Resume from '../../assets/svgs/Resume.pdf'
 import github from '../../assets/svgs/github.svg'
 import linkedln from '../../assets/svgs/linkedin.svg'
@@ -18,8 +18,9 @@ const Hero = () => {
 
   //   document.body.removeChild(link)
   // }
+  const { theme } = useGlobalContext();
   return (
-    <section id='profile'>
+    <section id='profile' data-theme={theme} className='profile-wrapper'>
       <div className='profile-container flex-center flex'>
         <div className="profile-picture">
           <img src={profile} alt="" />
@@ -44,7 +45,7 @@ const Hero = () => {
           <div className="profile-icons flex align-center">
             <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic-449b12259">
               <div className='profile-icon'>
-                  <img src={linkedln} alt="" />
+                <img src={linkedln} alt="" />
               </div>
             </a>
             <a target='blank' href="https://github.com/savio234">

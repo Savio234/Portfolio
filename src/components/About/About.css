@@ -2,6 +2,26 @@
     height: 85vh;
     padding: 0 8rem;
 }
+.about-wrapper[data-theme = 'dark'] {
+    background: #000;
+    transition: all 300ms ease-in-out;
+}
+.about-wrapper[data-theme = 'dark'] .about-container p {
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
+.about-wrapper[data-theme = 'dark'] .about-card p{
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
+.about-wrapper[data-theme = 'dark'] .h3 {
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
+.about-wrapper[data-theme = 'dark'] .about-card {
+    border-color: #FFF;
+    transition: all 300ms ease-in-out;
+}
 .about-container p {
     color: #000;
     font-family: 'satoshi';
@@ -53,6 +73,12 @@
 .about-card p {
     color: #000;
     font-family: 'satoshi';
+}
+.card-icon-wrapper {
+    background: #FFF;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 .card-icon {
     width: 3.2rem;
@@ -107,7 +133,7 @@
 @media screen and (max-width: 485px) {
     .about-container h1 {
         font-size: 2.4rem;
-        line-height: 3rem;
+        line-height: 3.2rem;
     }
     .about-card {
         width: 95%;
@@ -117,8 +143,8 @@
         font-weight: 700;
     }
     .about-card h3 {
-        font-size: 2.4rem;
-        line-height: 3.2rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
     }
     .about-text p {
         font-size: 1.4rem;
