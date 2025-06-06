@@ -4,7 +4,17 @@
     border: 0.2rem solid #333;
     border-radius: 2.4rem;
     transition: all 0.3s ease-in-out;
-
+}
+.projectCard[data-theme = 'dark'] {
+    border-color: #FFF;
+}
+.projectCard[data-theme = 'dark'] .card-header h1, 
+.projectCard[data-theme = 'dark'] .card-text h3 {
+    color: #FFF;
+}
+.projectCard[data-theme = 'dark'] .btns a .card-btn {
+    border-color: #FFF;
+    color: #FFF;
 }
 .projectCard:hover {
     transition: all 0.3s ease-in-out;

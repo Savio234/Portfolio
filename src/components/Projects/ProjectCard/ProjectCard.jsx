@@ -1,9 +1,11 @@
 import React from 'react'
+import { useGlobalContext } from "../../../contexts/AppContext";
 import './ProjectCard.css'
 
 const ProjectCard = ({img, title, subtext, repoLink, demoLink, type}) => {
+    const { theme } = useGlobalContext();
   return (
-    <div className='projectCard'>
+    <div data-theme={theme} className='projectCard'>
         <div className="cardImage">
             <img src={img} alt="" />
         </div>

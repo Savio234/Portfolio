@@ -116,7 +116,10 @@
     .about-content {
         flex-direction: column;
         height: auto;
-        margin: 6rem 0 8rem;
+        margin: 6rem 0 0;
+    }
+    .about-wrapper {
+        padding-bottom: 6rem;
     }
     .about-container {
         height: auto;

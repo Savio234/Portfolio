@@ -1,13 +1,15 @@
 import React from 'react'
+import { useGlobalContext } from "../../contexts/AppContext";
 import ProjectCard from './ProjectCard/ProjectCard'
 import projectData from '../../mock/projectData'
 import './Projects.css'
 
 const Projects = () => {
+  const { theme } = useGlobalContext();
   return (
-    <section id="project">
+    <section data-theme={theme} id="project" className='project-wrapper'>
       <div className="project-container">
-        <p className='center'>Browse My Recent</p>
+        <p className='center project-container-p'>Browse My Recent</p>
         <h1 className='center'>Projects</h1>
       </div>
       <div className="projectCard-container">

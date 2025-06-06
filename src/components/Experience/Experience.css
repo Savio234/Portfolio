@@ -1,6 +1,27 @@
+.experience-wrapper {
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+.experience-wrapper[data-theme = 'dark'] {
+    background: #000;
+    transition: all 300ms ease-in-out;
+}
+.experience-wrapper[data-theme = 'dark'] .experience-container p {
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
+.experience-wrapper[data-theme = 'dark'] .content-text-h2, .content-text-p {
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
+.experience-wrapper[data-theme = 'dark'] .content-card-h3 {
+    color: #FFF;
+    transition: all 300ms ease-in-out;
+}
 .experience-container {
     height: 85vh;
     padding: 0 8rem;
+    transition: all 300ms ease-in-out;
 }
 .experience-container p {
     color: #000;
@@ -79,9 +100,11 @@
     .content-container {
         flex-direction: column;
     }
+    .experience-wrapper {
+        padding: 6rem 2rem 8rem;
+    }
     .experience-container {
         height: auto;
-        margin: 6rem 0 8rem;
     }
     .icon {
         width: 1.6rem;
