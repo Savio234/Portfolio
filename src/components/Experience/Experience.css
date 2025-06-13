@@ -64,8 +64,8 @@
 }
 .content-sm-card > div {
     width: 17rem;
-    gap: 1rem;
-    align-items: center;
+    gap: 0.8rem;
+    align-items: flex-start;
 }
 .content-text h2 {
     font-size: 2rem;
