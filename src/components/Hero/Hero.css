@@ -21,10 +21,10 @@
     color: #FFF;
     transition: all 300ms ease-in-out;
 }
-.profile-wrapper[data-theme = 'dark'] .profile-icon {
+/* .profile-wrapper[data-theme = 'dark'] .profile-icon {
     transition: all 300ms ease-in-out;
     background: #FFF;
-}
+} */
 .profile-picture {
     height: 40rem;
     width: 40rem;
@@ -84,9 +84,17 @@
     gap: 1rem;
     margin-top: 2rem;
 }
+.profile-icon-dark {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background: #FFF;
+    transition: all 300ms ease-in-out;
+}
 .profile-icon {
     width: 3.2rem;
     height: 3.2rem;
+    transition: all 300ms ease-in-out;
 }
 
 @media screen and (max-width: 1023px) {

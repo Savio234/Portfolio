@@ -44,14 +44,32 @@ const Hero = () => {
           </div>
           <div className="profile-icons flex align-center">
             <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic-449b12259">
-              <div className='profile-icon'>
-                <img src={linkedln} alt="" />
-              </div>
+              {theme === 'light' && (
+                <div className='profile-icon'>
+                  <img src={linkedln} alt="" />
+                </div>
+              )}
+              {theme === 'dark' && (
+                <div className='profile-icon-dark flex align-center'>
+                  <div className='profile-icon'>
+                    <img src={linkedln} alt="" />
+                  </div>
+                </div>
+              )}
             </a>
             <a target='blank' href="https://github.com/savio234">
-              <div className='profile-icon'>
-                <img src={github} alt="" />
-              </div>
+              {theme === 'light' && (
+                <div className='profile-icon'>
+                  <img src={github} alt="" />
+                </div>
+              )}
+              {theme === 'dark' && (
+                <div className='profile-icon-dark flex align-center'>
+                  <div className='profile-icon'>
+                    <img src={github} alt="" />
+                  </div>
+                </div>
+              )}
             </a>
           </div>
         </div>
