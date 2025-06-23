@@ -18,7 +18,7 @@ export default [
         // subtext: 'A modern blog platform engineered for effortless content creation and consumption. Leveraging Contentful for robust content management and offering intuitive markdown support, with a seamless publishing experience for writers and a beautiful, intuitive space for readers.',
         subtext: 'A modern blog platform engineered for effortless content creation and consumption. Leveraging Contentful for robust content management and markdown support, with a seamless publishing experience for writers',
         repoLink: 'https://github.com/sippydrinks/Sippy-blog',
-        demoLink: 'https://sippy-blog.vercel.app/',
+        demoLink: 'https://www.sippy.life/blog',
         type: '',
     },
     {
@@ -33,7 +33,7 @@ export default [
         projectName: 'Sippy Admin',
         projectImg: IMG4,
         subtext: 'Developed an intuitive and robust admin dashboard, streamlining the operational workflow of a rapidly growing drink e-commerce service. The platform provides administrators with powerful tools for detailed order management, dynamic product catalog updates, oversee customer accounts and precise inventory control, significantly enhancing efficiency for event deliveries nationwide.',
-        repoLink: '/',
+        repoLink: '',
         demoLink: '',
         type: 'admin',
     },
