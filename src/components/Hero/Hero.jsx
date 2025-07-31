@@ -1,5 +1,6 @@
-import React from 'react'
-import profile from '../../assets/svgs/profile-pic.png'
+import React from 'react';
+// import profile from '../../assets/svgs/profile-pic.png';
+import profile from '../../assets/svgs/my_image_1.jpg';
 import { useGlobalContext } from "../../contexts/AppContext";
 import Resume from '../../assets/svgs/Resume.pdf'
 import github from '../../assets/svgs/github.svg'
