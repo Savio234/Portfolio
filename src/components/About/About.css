@@ -51,6 +51,7 @@
 .content-img img {
     border-radius: 3.2rem;
     object-fit: cover;
+    object-position: 0 0;
 }
 .overlay {
     position: absolute;
