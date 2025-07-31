@@ -36,7 +36,7 @@ const Experience = () => {
             <h3 className='center content-card-h3'>Frontend frameworks</h3>
             <div className='content-sm-card flex flex-center flex-wrap'>
               {
-                experienceData.slice(5, 10).map((item, index) =>
+                experienceData.slice(5, 11).map((item, index) =>
                   <div key={index} className="flex">
                     <div className="icon">
                       <img src={checkmark} alt="" />

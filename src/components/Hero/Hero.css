@@ -29,7 +29,7 @@
 .profile-picture img {
     border-radius: 50%;
     object-fit: cover;
-    object-position: 0 -20rem;
+    object-position: 0 -2rem;
 }
 .profile-text p {
     font-size: 2rem;
@@ -126,9 +126,6 @@
     .profile-text h3 {
         font-size: 1.8rem;
         line-height: 2.7rem;
-    }
-    .profile-picture img {
-        object-position: 0 -14rem;
     }
 }
 

@@ -32,9 +32,9 @@ const Hero = () => {
           <h1 className='margin-0'>Dominic Ezeifejafor</h1>
           <h3 className='margin-0'>Frontend web developer</h3>
           <div className="profile-btns flex flex-center">
-            <div 
-              onClick={() => window.open(Resume)}
-              className="profile-btn flex align-center cv">
+            <div onClick={() => window.open(Resume)}
+              className="profile-btn flex align-center cv"
+            >
               Download CV
             </div>
             <div className="profile-btn flex align-center contact">
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="profile-icons flex align-center">
-            <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic-449b12259">
+            <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic">
               {theme === 'light' && (
                 <div className='profile-icon'>
                   <img src={linkedln} alt="" />

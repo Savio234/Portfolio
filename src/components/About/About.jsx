@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { useGlobalContext } from "../../contexts/AppContext";
-import experienceIcon from '../../assets/svgs/experience.svg'
-import educationIcon from '../../assets/svgs/education.svg'
-import profile from '../../assets/svgs/about-pic.png'
+import experienceIcon from '../../assets/svgs/experience.svg';
+import educationIcon from '../../assets/svgs/education.svg';
+// import profile from '../../assets/svgs/about-pic.png';
+import profile from '../../assets/svgs/my_image_1.jpg';
 import './About.css'
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
         <div className="about-content flex align-center">
           <div className="content-img">
             <img src={profile} alt="" />
+            <div className='overlay'></div>
           </div>
 
           <div className='flex flex-column'>

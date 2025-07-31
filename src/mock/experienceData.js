@@ -39,6 +39,10 @@ export default [
     {
         name: 'Git',
         level: 'Proficient'
+    },
+    {
+        name: 'Redux',
+        level: 'Proficient'
     }
 ]
 // Hello there! 👋 I'm [Your Name], a passionate and detail-oriented Frontend Developer based in [Your Location]. With a love for crafting beautiful and intuitive user interfaces, I thrive on turning ideas into visually stunning, responsive, and functional web applications.

@@ -1,7 +1,8 @@
-import IMG1 from '../assets/svgs/govtech2.jpg'
-import IMG2 from '../assets/svgs/sippy.png'
-import IMG3 from '../assets/svgs/blog.png'
-import IMG4 from '../assets/svgs/admin.png'
+import IMG1 from '../assets/svgs/govtech2.jpg';
+import IMG2 from '../assets/svgs/sippy.png';
+import IMG3 from '../assets/svgs/blog.png';
+import IMG4 from '../assets/svgs/admin.png';
+import IMG5 from '../assets/svgs/govtech_home.png';
 // eslint-disable-next-line
 export default [
     {
@@ -36,5 +37,13 @@ export default [
         repoLink: '',
         demoLink: '',
         type: 'admin',
+    },
+    {
+        projectName: 'Govtech Africa',
+        projectImg: IMG5,
+        subtext: 'Developed the corporate website for GovTech Africa, a leading technology solutions provider dedicated to enabling African governments with state-of-the-art technology, from customized software to cybersecurity and AI, to drive efficiency and public sector excellence.',
+        repoLink: 'https://github.com/Techmybrand/govtechafrica',
+        demoLink: 'https://www.govtechafrica.com',
+        type: '',
     },
 ]
