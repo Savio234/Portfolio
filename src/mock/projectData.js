@@ -3,8 +3,17 @@ import IMG2 from '../assets/svgs/sippy.png';
 import IMG3 from '../assets/svgs/blog.png';
 import IMG4 from '../assets/svgs/admin.png';
 import IMG5 from '../assets/svgs/govtech_home.png';
+import IMG6 from '../assets/svgs/Gruve.jpeg';
 // eslint-disable-next-line
 export default [
+    {
+        projectName: 'Gruve Ticketing System',
+        projectImg: IMG6,
+        subtext: 'Gruve Events is a full-stack, Next.js and Web3-enabled cutting-edgeand event management platform designed to deliver a secure, global, and user-friendly experience for both event creators and attendees.',
+        repoLink: 'https://github.com/GruveWeb3/landing',
+        demoLink: 'https://www.gruve.events/',
+        type: '',
+    },
     {
         projectName: 'Sippy Life',
         projectImg: IMG2,
