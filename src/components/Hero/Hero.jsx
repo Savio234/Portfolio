@@ -2,7 +2,7 @@ import React from 'react';
 // import profile from '../../assets/svgs/profile-pic.png';
 import profile from '../../assets/svgs/my_image_1.jpg';
 import { useGlobalContext } from "../../contexts/AppContext";
-import Resume from '../../assets/svgs/Resume.pdf'
+import Resume from '../../assets/pdfs/portfolio.pdf'
 import github from '../../assets/svgs/github.svg'
 import linkedln from '../../assets/svgs/linkedin.svg'
 import './Hero.css'
@@ -35,7 +35,7 @@ const Hero = () => {
             <div onClick={() => window.open(Resume)}
               className="profile-btn flex align-center cv"
             >
-              Download CV
+              Download Portfolio
             </div>
             <div className="profile-btn flex align-center contact">
               <a href="#contact">

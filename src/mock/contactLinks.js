@@ -13,7 +13,7 @@ export default [
     },
     {
         socials: 'LinkedIn',
-        link: 'https://www.linkedin.com/in/ezeifejafor-dominic-449b12259',
+        link: 'https://www.linkedin.com/in/ezeifejafor-dominic',
         icon: linkedin
     },
     {
