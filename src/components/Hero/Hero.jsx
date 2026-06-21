@@ -35,7 +35,7 @@ const Hero = () => {
             <div onClick={() => window.open(Resume)}
               className="profile-btn flex align-center cv"
             >
-              Download Portfolio
+              Portfolio
             </div>
             <div className="profile-btn flex align-center contact">
               <a href="#contact">
