@@ -1,0 +1,443 @@
+.about-page-wrapper {
+    padding-bottom: 8rem;
+    transition: background 300ms ease-in-out;
+}
+.about-page-wrapper[data-theme='dark'] {
+    background: #000;
+}
+.about-page-wrapper[data-theme='dark'] .about-section-title,
+.about-page-wrapper[data-theme='dark'] .about-page-statement,
+.about-page-wrapper[data-theme='dark'] .center {
+    color: #FFF;
+}
+
+.about-page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 6rem 12rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.about-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4581F9;
+    margin-bottom: 0.8rem;
+}
+
+.about-section-title {
+    font-family: 'satoshi-bold';
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 3.2rem;
+}
+
+/* ---- Status badge ---- */
+.about-status {
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1.6rem auto 2.4rem;
+    padding: 0.6rem 1.6rem;
+    width: fit-content;
+    border-radius: 10rem;
+    border: 0.1rem solid #35353533;
+}
+.about-page-wrapper[data-theme='dark'] .about-status {
+    border-color: #ffffff33;
+}
+.about-status-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #2FBF71;
+}
+.about-status-label {
+    font-size: 1.4rem;
+    font-family: 'satoshi';
+    font-weight: 600;
+    color: #353535;
+}
+.about-page-wrapper[data-theme='dark'] .about-status-label {
+    color: #FFF;
+}
+
+/* ---- Opening statement ---- */
+.about-page-statement {
+    max-width: 75rem;
+    margin: 0 auto 4.8rem;
+    font-family: 'satoshi-bold';
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #000;
+}
+.about-intro-image {
+    border-radius: 1.6rem;
+    overflow: hidden;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.about-intro-image img {
+    width: 100%;
+    max-height: 48rem;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---- Story ---- */
+.about-story-text {
+    max-width: 68rem;
+    margin: 0 auto 1.6rem;
+    font-family: 'satoshi';
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.about-page-wrapper[data-theme='dark'] .about-story-text {
+    color: #DDD;
+}
+
+.chapters-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
+}
+.chapter-tab {
+    padding: 0.8rem 1.8rem;
+    border-radius: 10rem;
+    border: 0.1rem solid #35353533;
+    background: transparent;
+    font-family: 'satoshi-bold';
+    font-size: 1.4rem;
+    color: #353535;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.about-page-wrapper[data-theme='dark'] .chapter-tab {
+    border-color: #ffffff33;
+    color: #DDD;
+}
+.chapter-tab.is-active {
+    background: #000;
+    border-color: #000;
+    color: #FFF;
+}
+
+.chapter-panel {
+    gap: 4rem;
+    align-items: stretch;
+}
+.chapter-panel-img {
+    flex-shrink: 0;
+    width: 32rem;
+    height: 24rem;
+    border-radius: 1.6rem;
+    overflow: hidden;
+}
+.chapter-panel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chapter-panel-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4581F9, #F97316);
+    font-size: 6rem;
+    color: #ffffffcc;
+    font-family: 'satoshi-bold';
+}
+.chapter-panel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.chapter-panel-text h3 {
+    font-family: 'satoshi-bold';
+    font-size: 2.2rem;
+    color: #4581F9;
+    margin-bottom: 1.2rem;
+}
+.chapter-panel-text p {
+    font-family: 'satoshi';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #353535;
+}
+.about-page-wrapper[data-theme='dark'] .chapter-panel-text p {
+    color: #DDD;
+}
+
+/* ---- Stack ---- */
+.about-stack-grid {
+    display: flex;
+    flex-direction: column;
+}
+.about-stack-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.6rem 0;
+    border-bottom: 0.1rem solid #35353522;
+}
+.about-page-wrapper[data-theme='dark'] .about-stack-row {
+    border-color: #ffffff22;
+}
+.about-stack-label {
+    font-family: 'satoshi-bold';
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #4581F9;
+    flex-shrink: 0;
+    width: 17rem;
+}
+.about-stack-items {
+    font-family: 'satoshi';
+    font-size: 1.5rem;
+    color: #353535;
+    text-align: right;
+}
+.about-page-wrapper[data-theme='dark'] .about-stack-items {
+    color: #DDD;
+}
+
+/* ---- Principles ---- */
+.about-principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.about-principle-card {
+    padding: 2.8rem;
+    border-radius: 1.6rem;
+    border: 0.1rem solid #35353522;
+    transition: transform 200ms ease, border-color 200ms ease;
+}
+.about-principle-card:hover {
+    border-color: #4581F966;
+    transform: translateY(-0.2rem);
+}
+.about-page-wrapper[data-theme='dark'] .about-principle-card {
+    border-color: #ffffff22;
+}
+.about-page-wrapper[data-theme='dark'] .about-principle-card:hover {
+    border-color: #4581F988;
+}
+.about-principle-icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4581F915;
+    color: #4581F9;
+    margin-bottom: 1.8rem;
+}
+.about-page-wrapper[data-theme='dark'] .about-principle-icon {
+    background: #4581F926;
+    color: #4581F9;
+}
+.about-principle-card h4 {
+    font-family: 'satoshi-bold';
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.about-principle-card p {
+    font-family: 'satoshi';
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #353535;
+}
+.about-page-wrapper[data-theme='dark'] .about-principle-card p {
+    color: #DDD;
+}
+
+/* ---- Timeline ---- */
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.timeline-row {
+    display: block;
+    padding: 2.4rem 2.8rem;
+    border-radius: 1.6rem;
+    border: 0.1rem solid #35353522;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+.timeline-row:hover {
+    border-color: #4581F988;
+    transform: translateY(-0.2rem);
+}
+.about-page-wrapper[data-theme='dark'] .timeline-row {
+    border-color: #ffffff22;
+}
+.timeline-row-head {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+.timeline-row-head h3 {
+    font-family: 'satoshi-bold';
+    font-size: 2rem;
+    color: #000;
+}
+.about-page-wrapper[data-theme='dark'] .timeline-row-head h3 {
+    color: #FFF;
+}
+.timeline-dates {
+    font-family: 'satoshi-bold';
+    font-size: 1.3rem;
+    color: #4581F9;
+    flex-shrink: 0;
+}
+.timeline-role {
+    font-family: 'satoshi-bold';
+    font-size: 1.4rem;
+    color: #353535;
+    margin-bottom: 1rem;
+}
+.about-page-wrapper[data-theme='dark'] .timeline-role {
+    color: #BBB;
+}
+.timeline-body {
+    font-family: 'satoshi';
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #353535;
+}
+.about-page-wrapper[data-theme='dark'] .timeline-body {
+    color: #DDD;
+}
+
+/* ---- Off screen ---- */
+.about-offscreen-note {
+    max-width: 50rem;
+    margin: 0 auto 3.2rem;
+    font-family: 'satoshi';
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #35353599;
+}
+.about-page-wrapper[data-theme='dark'] .about-offscreen-note {
+    color: #ffffff99;
+}
+.offscreen-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+.offscreen-card {
+    --accent: #4581F9;
+    padding: 2.4rem 2rem;
+    border-radius: 1.6rem;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border: 0.1rem solid var(--accent);
+}
+.offscreen-tag {
+    display: block;
+    font-family: 'satoshi-bold';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+.offscreen-card h4 {
+    font-family: 'satoshi-bold';
+    font-size: 1.8rem;
+    color: #000;
+}
+.about-page-wrapper[data-theme='dark'] .offscreen-card h4 {
+    color: #FFF;
+}
+
+/* ---- CTA ---- */
+.about-cta-text {
+    font-family: 'satoshi';
+    font-size: 1.6rem;
+    color: #353535;
+    margin-bottom: 2.4rem;
+}
+.about-page-wrapper[data-theme='dark'] .about-cta-text {
+    color: #DDD;
+}
+.about-cta-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.4rem 3.2rem;
+    border-radius: 10rem;
+    background: #000;
+    color: #FFF;
+    font-family: 'satoshi-bold';
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+.about-cta-btn:hover {
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 1023px) {
+    .about-page-container {
+        padding: 4rem 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-page-container {
+        padding: 4rem 4rem;
+    }
+    .about-page-statement {
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+    }
+    .chapter-panel {
+        flex-direction: column;
+    }
+    .chapter-panel-img {
+        width: 100%;
+        height: 22rem;
+    }
+    .about-stack-row {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .about-stack-items {
+        text-align: left;
+    }
+    .about-principles-grid {
+        grid-template-columns: 1fr;
+    }
+    .offscreen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .timeline-row-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-page-container {
+        padding: 3.2rem 1.6rem;
+    }
+}

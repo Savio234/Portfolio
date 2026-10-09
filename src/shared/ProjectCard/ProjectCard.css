@@ -1,0 +1,154 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    border: 0.1rem solid #35353522;
+    transition: all 300ms ease-in-out;
+}
+.projectCard:hover {
+    transform: translateY(-0.6rem);
+    /* border-color: #4581F955; */
+    /* box-shadow: 0 1.6rem 3.2rem -1.6rem #4581F955; */
+}
+.projectCard[data-theme='dark'] {
+    border-color: #ffffff22;
+    background: #0a0a0a;
+}
+.projectCard[data-theme='dark']:hover {
+    border-color: #4581F988;
+}
+
+.cardImage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #35353511;
+}
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.projectCard:hover .cardImage img {
+    transform: scale(1.06);
+}
+.cardImage-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, #00000066 100%);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.projectCard:hover .cardImage-overlay {
+    opacity: 1;
+}
+
+.card-index {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+    background: #ffffffcc;
+    font-family: 'satoshi-bold';
+    font-size: 1.2rem;
+    color: #000;
+    backdrop-filter: blur(0.4rem);
+}
+.card-category {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 10rem;
+    background: #4581F9;
+    font-family: 'satoshi-bold';
+    font-size: 1.2rem;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.card-header {
+    padding: 2rem 1.6rem 0;
+}
+.card-header h1 {
+    font-family: 'satoshi-bold';
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #000;
+}
+.projectCard[data-theme='dark'] .card-header h1 {
+    color: #FFF;
+}
+
+.card-text {
+    padding: 0.8rem 1.6rem 0;
+}
+.card-text h3 {
+    font-family: 'satoshi';
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #353535;
+}
+.projectCard[data-theme='dark'] .card-text h3 {
+    color: #BBB;
+}
+
+.btns {
+    gap: 1.2rem;
+    padding: 1.6rem;
+    margin-top: auto;
+    a {
+        width: 50%;
+    }
+}
+.card-btn {
+    justify-content: center;
+    flex: 1;
+    height: 4.4rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.git-btn {
+    /* border: 0.1rem solid #353535; */
+    background-color: #FFF;
+}
+.projectCard[data-theme='dark'] .git-btn {
+    border-color: #FFF;
+}
+.projectCard[data-theme='dark'] .git-btn .card_btn-text {
+    color: #FFF;
+}
+.git-btn:hover {
+    background: #000000;
+    border-color: #000000;
+}
+.git-btn:hover .card_btn-text {
+    color: #FFF;
+}
+.live-btn {
+    background: #000000;
+}
+.live-btn:hover {
+    background-color: transparent;
+    background-color: #FFF;
+}
+.live-btn:hover .card_btn-text {
+    color: #000;
+}
+.card_btn-text {
+    font-family: 'satoshi-bold';
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #FFF;
+    transition: color 300ms ease-in-out;
+}
+.git-btn .card_btn-text {
+    color: #353535;
+}

@@ -1,0 +1,203 @@
+#header-sm {
+    display: none;
+}
+
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #F0EBE3;
+    transition: background 300ms ease-in-out, border-color 300ms ease-in-out;
+    box-shadow: 0 0.4rem 2.4rem rgba(0, 0, 0, 0.5);
+}
+
+.header-wrapper[data-theme='dark'] {
+    background: #000000;
+}
+
+.header-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2.8rem 12rem;
+}
+
+.logo {
+    width: 3.6rem;
+    height: 3.6rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-actions {
+    gap: 3.6rem;
+}
+
+.nav-list {
+    gap: 3.2rem;
+}
+
+.nav-list-item a span {
+    transition: color 200ms ease, transform 200ms ease;
+    display: inline-block;
+    padding: 0.4rem 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.nav-list-item a span {
+    font-family: 'satoshi-bold';
+    font-size: 1.2rem;
+    color: #1E3050;
+    font-weight: 700;
+}
+
+.header-wrapper[data-theme='dark'] .nav-list-item a span {
+    color: #E5E7EB;
+}
+
+.nav-list-item a:hover {
+    color: #4581F9;
+    transform: translateY(-0.1rem);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(30, 48, 80, 0.15);
+    background: transparent;
+    color: #1E3050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0.8rem;
+}
+
+.header-wrapper[data-theme='dark'] .theme-toggle-btn,
+.mob-header[data-theme='dark'] .theme-toggle-btn {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #F9FAFB;
+}
+
+.theme-toggle-btn:hover {
+    border-color: #4581F9;
+    background: rgba(69, 129, 249, 0.1);
+    transform: scale(1.08) rotate(12deg);
+}
+
+.theme-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 250ms ease;
+}
+
+.moon-icon {
+    transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 768px) {
+    #header-lg {
+        display: none;
+    }
+    #header-sm {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: transparent;
+        transition: background 300ms ease-in-out;
+    }
+
+    .mob-header[data-theme='dark'], #header-sm[data-theme='dark'] {
+        background: #000000;
+    }
+
+    .mob-header-bar {
+        padding: 2rem 2.4rem;
+    }
+
+    .mob-controls {
+        gap: 1.4rem;
+    }
+
+    .mob-menu-btn,
+    .mob-close-btn {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        width: 3.6rem;
+        height: 3.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem;
+    }
+
+    .mob-menu-btn img,
+    .mob-close-btn img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .mob-header[data-theme='dark'] .mob-menu-btn img,
+    .mob-header[data-theme='dark'] .mob-close-btn img {
+        filter: brightness(0) invert(1);
+    }
+
+    .mob-nav-drawer {
+        position: fixed;
+        inset: 0;
+        background: #F0EBE3;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 2rem 2.4rem;
+    }
+
+    .mob-header[data-theme='dark'] .mob-nav-drawer {
+        background: #0a0a0a;
+    }
+
+    .mob-nav-drawer.is-open {
+        transform: translateY(0);
+    }
+
+    .mob-nav-header {
+        margin-bottom: 6rem;
+    }
+
+    .mob-nav-list {
+        gap: 3.6rem;
+        list-style: none;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .mob-nav-item a h2 {
+        font-family: 'satoshi-bold';
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: #1E3050;
+        transition: color 200ms ease;
+    }
+
+    .mob-header[data-theme='dark'] .mob-nav-item a h2 {
+        color: #F9FAFB;
+    }
+
+    .mob-nav-item a:hover h2 {
+        color: #4581F9;
+    }
+}

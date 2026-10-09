@@ -1,10 +1,8 @@
-import React from 'react';
 import { useGlobalContext } from "../../contexts/AppContext";
-import experienceIcon from '../../assets/svgs/experience.svg';
-import educationIcon from '../../assets/svgs/education.svg';
-// import profile from '../../assets/svgs/about-pic.png';
-import profile from '../../assets/svgs/my_image_1.jpg';
-import './About.css'
+import experienceIcon from "../../assets/svgs/experience.svg";
+import educationIcon from "../../assets/svgs/education.svg";
+import profile from "../../assets/images/my_offiicial_portrait.png";
+import "./About.css";
 
 const About = () => {
   const { theme } = useGlobalContext();

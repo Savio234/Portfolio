@@ -1,82 +1,62 @@
-import React from 'react';
-// import profile from '../../assets/svgs/profile-pic.png';
-import profile from '../../assets/svgs/my_image_1.jpg';
+import profile from "../../assets/images/my_offiicial_portrait.png";
+import Resume from "../../assets/pdfs/portfolio.pdf";
 import { useGlobalContext } from "../../contexts/AppContext";
-import Resume from '../../assets/pdfs/portfolio.pdf'
-import github from '../../assets/svgs/github.svg'
-import linkedln from '../../assets/svgs/linkedin.svg'
-import './Hero.css'
+import "./Hero.css";
 
 const Hero = () => {
-  // const handleDownload = () => {
-  //   const blob = new Blob([Resume], { type: 'text/plain' })
-  //   const link = document.createElement('a')
-  //   link.download = 'resume-example.pdf'
-  //   link.href = window.URL.createObjectURL(blob)
-
-  //   document.body.appendChild(link)
-  //   link.click()
-
-  //   document.body.removeChild(link)
-  // }
   const { theme } = useGlobalContext();
+
   return (
-    <section id='profile' data-theme={theme} className='profile-wrapper'>
-      <div className='profile-container flex-center flex'>
-        <div className="profile-picture">
-          <img src={profile} alt="" />
+    <section id="hero" data-theme={theme} className="hero-wrapper">
+      <div className="hero-container">
+        <div className="hero-content">
+          <span className="hero-eyebrow">
+            DEVELOPMENT | DESIGN | STRATEGY
+          </span>
+
+          <h1 className="hero-title">
+            Hi, I'm Dominic<br />Ezeifejafor.
+          </h1>
+
+          <p className="hero-description">
+            A frontend developer and UI engineer passionate about building fast, accessible,
+            and beautiful digital products. Welcome to my portfolio.
+          </p>
+
+          <div className="hero-actions">
+            <a href={Resume} target="_blank" rel="noopener noreferrer" className="hero-btn hero-btn-primary">
+              <span>View Resume</span>
+              <svg className="hero-btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.33334 8H12.6667M12.6667 8L8.00001 3.33334M12.6667 8L8.00001 12.6667"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+
+            <a href="mailto:dominicezeifejafor@gmail.com" className="hero-btn hero-btn-secondary">Let's Talk</a>
+          </div>
         </div>
 
-        <div className="profile-text">
-          <p className='margin-0'>Hello I'm</p>
-          <h1 className='margin-0'>Dominic Ezeifejafor</h1>
-          <h3 className='margin-0'>Frontend web developer</h3>
-          <div className="profile-btns flex flex-center">
-            <div onClick={() => window.open(Resume)}
-              className="profile-btn flex align-center cv"
-            >
-              Portfolio
+        <div className="hero-media">
+          <div className="hero-avatar-frame">
+            <div className="hero-avatar-backdrop" aria-hidden="true"></div>
+            <div className="hero-avatar-img-wrapper">
+              <img
+                src={profile}
+                alt="Dominic Ezeifejafor"
+                className="hero-avatar-img"
+              />
             </div>
-            <div className="profile-btn flex align-center contact">
-              <a href="#contact">
-                Contact Info
-              </a>
-            </div>
-          </div>
-          <div className="profile-icons flex align-center">
-            <a target='blank' href="https://www.linkedin.com/in/ezeifejafor-dominic">
-              {theme === 'light' && (
-                <div className='profile-icon'>
-                  <img src={linkedln} alt="" />
-                </div>
-              )}
-              {theme === 'dark' && (
-                <div className='profile-icon-dark flex align-center'>
-                  <div className='profile-icon'>
-                    <img src={linkedln} alt="" />
-                  </div>
-                </div>
-              )}
-            </a>
-            <a target='blank' href="https://github.com/savio234">
-              {theme === 'light' && (
-                <div className='profile-icon'>
-                  <img src={github} alt="" />
-                </div>
-              )}
-              {theme === 'dark' && (
-                <div className='profile-icon-dark flex align-center'>
-                  <div className='profile-icon'>
-                    <img src={github} alt="" />
-                  </div>
-                </div>
-              )}
-            </a>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,8 +1,9 @@
 import React from 'react'
 import { useGlobalContext } from "../../contexts/AppContext";
-import ProjectCard from './ProjectCard/ProjectCard'
+// import ProjectCard from './ProjectCard/ProjectCard';
 import projectData from '../../mock/projectData'
-import './Projects.css'
+import { ProjectCard } from '../../shared';
+import './Projects.css';
 
 const Projects = () => {
   const { theme } = useGlobalContext();

@@ -1,0 +1,103 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    transition: transform 700ms cubic-bezier(0.76, 0, 0.24, 1);
+    transform: translateY(0);
+}
+
+.preloader-exit {
+    transform: translateY(-100%);
+}
+
+.preloader-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.preloader-exit .preloader-inner {
+    opacity: 0;
+    transform: translateY(-1.2rem);
+}
+
+.preloader-mark {
+    width: 7.2rem;
+    height: auto;
+    color: #4581F9;
+    animation: preloader-pulse 1.6s ease-in-out infinite;
+}
+
+.preloader-count {
+    font-family: 'satoshi-bold';
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1;
+    color: #FFF;
+    letter-spacing: 0.1rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.preloader-bar {
+    width: 18rem;
+    height: 0.3rem;
+    border-radius: 10rem;
+    background: #ffffff22;
+    overflow: hidden;
+}
+
+.preloader-bar-fill {
+    height: 100%;
+    background: #4581F9;
+    border-radius: 10rem;
+    transition: width 120ms linear;
+}
+
+@keyframes preloader-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.55;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .preloader,
+    .preloader-inner,
+    .preloader-mark,
+    .preloader-bar-fill {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .preloader-mark {
+        width: 5.6rem;
+    }
+    .preloader-count {
+        font-size: 3.2rem;
+    }
+    .preloader-bar {
+        width: 14rem;
+    }
+}

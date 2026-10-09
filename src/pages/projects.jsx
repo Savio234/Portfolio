@@ -1,14 +1,7 @@
-import React from 'react'
-import { Contact, Footer, ProjectComponent } from '../components'
+import { ProjectComponent } from "../components";
 
 const Projects = () => {
-  return (
-    <>
-      <ProjectComponent />
-      <Contact />
-      <Footer />
-    </>
-  )
+  return <ProjectComponent />;
 }
 
 export default Projects
