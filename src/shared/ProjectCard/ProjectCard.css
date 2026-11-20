@@ -116,14 +116,14 @@
     transition: all 300ms ease-in-out;
 }
 .git-btn {
-    /* border: 0.1rem solid #353535; */
+    border: 0.1rem solid #353535;
     background-color: #FFF;
 }
 .projectCard[data-theme='dark'] .git-btn {
     border-color: #FFF;
 }
 .projectCard[data-theme='dark'] .git-btn .card_btn-text {
-    color: #FFF;
+    color: #000;
 }
 .git-btn:hover {
     background: #000000;

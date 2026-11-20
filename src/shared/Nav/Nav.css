@@ -113,8 +113,11 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        background: transparent;
+        background: #F0EBE3;
         transition: background 300ms ease-in-out;
+    }
+    .mob-header{
+        box-shadow: 0 0.4rem 2.4rem rgba(0, 0, 0, 0.5);
     }
 
     .mob-header[data-theme='dark'], #header-sm[data-theme='dark'] {

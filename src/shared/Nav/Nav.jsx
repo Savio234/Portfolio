@@ -14,13 +14,8 @@ const Nav = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const closeNav = () => {
-    setMobileOpen(false);
-  };
-
-  const openNav = () => {
-    setMobileOpen(true);
-  };
+  const closeNav = () => setMobileOpen(false);
+  const openNav = () => setMobileOpen(true);
 
   return (
     <React.Fragment>

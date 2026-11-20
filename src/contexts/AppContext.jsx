@@ -1,20 +1,19 @@
-import React, { useContext, createContext, useState, useEffect } from 'react';
+import { useContext, createContext, useState, useEffect } from "react";
 
 const AppContext = createContext();
 
 const AppProvider =  ({children}) => {
-
     const [theme, setTheme] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const storedTheme = localStorage.getItem('theme');
-            return (storedTheme === 'dark' || storedTheme === 'light') ? storedTheme : 'light';
+        if (typeof window !== "undefined") {
+            const storedTheme = localStorage.getItem("theme");
+            return (storedTheme === "dark" || storedTheme === "light") ? storedTheme : "light";
         }
-        return 'light';
+        return "light";
     });
 
     useEffect(() => {
         document.body.className = theme;
-        localStorage.setItem('theme', theme);
+        localStorage.setItem("theme", theme);
     }, [theme]);
     return (
         <AppContext.Provider 

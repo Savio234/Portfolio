@@ -15,6 +15,10 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 6rem 12rem;
+    background-color: #FFF;
+}
+.about-page-wrapper[data-theme='dark'] .about-page-container {
+    background-color: #000;
 }
 
 .center {
@@ -103,14 +107,18 @@
     color: #DDD;
 }
 
+/* ---- Chapters Carousel ---- */
+.about-chapters {
+    overflow: hidden;
+}
 .chapters-tabs {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.4rem;
 }
 .chapter-tab {
-    padding: 0.8rem 1.8rem;
+    padding: 0.8rem 2rem;
     border-radius: 10rem;
     border: 0.1rem solid #35353533;
     background: transparent;
@@ -118,34 +126,133 @@
     font-size: 1.4rem;
     color: #353535;
     cursor: pointer;
-    transition: all 200ms ease-in-out;
+    transition: all 250ms ease;
+}
+.chapter-tab:hover {
+    border-color: #4581F9;
+    color: #000;
 }
 .about-page-wrapper[data-theme='dark'] .chapter-tab {
     border-color: #ffffff33;
     color: #DDD;
+}
+.about-page-wrapper[data-theme='dark'] .chapter-tab:hover {
+    border-color: #4581F9;
+    color: #FFF;
 }
 .chapter-tab.is-active {
     background: #000;
     border-color: #000;
     color: #FFF;
 }
+.about-page-wrapper[data-theme='dark'] .chapter-tab.is-active {
+    background: #FFF;
+    border-color: #FFF;
+    color: #000;
+}
 
-.chapter-panel {
-    gap: 4rem;
-    align-items: stretch;
+.chapters-carousel-stage {
+    position: relative;
+    width: 100%;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.6rem;
 }
-.chapter-panel-img {
-    flex-shrink: 0;
+
+.chapter-carousel-card {
+    position: absolute;
     width: 32rem;
-    height: 24rem;
-    border-radius: 1.6rem;
+    height: 40rem;
+    border-radius: 2.4rem;
     overflow: hidden;
+    cursor: pointer;
+    border: 0.15rem solid rgba(0, 0, 0, 0.1);
+    background-color: #111318;
+    box-shadow: 0 2.4rem 5.6rem rgba(0, 0, 0, 0.22);
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.35s ease, filter 0.55s ease;
+    user-select: none;
 }
-.chapter-panel-img img {
+.about-page-wrapper[data-theme='dark'] .chapter-carousel-card {
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 2.4rem 5.6rem rgba(0, 0, 0, 0.65);
+}
+
+.chapter-carousel-card[data-offset="0"] {
+    transform: translateX(0) scale(1);
+    z-index: 5;
+    opacity: 1;
+    border-color: rgba(69, 129, 249, 0.65);
+    filter: brightness(1);
+}
+.chapter-carousel-card[data-offset="-1"] {
+    transform: translateX(-68%) scale(0.85);
+    z-index: 3;
+    opacity: 0.85;
+    filter: brightness(0.75);
+}
+.chapter-carousel-card[data-offset="1"] {
+    transform: translateX(68%) scale(0.85);
+    z-index: 3;
+    opacity: 0.85;
+    filter: brightness(0.75);
+}
+.chapter-carousel-card[data-offset="-2"] {
+    transform: translateX(-125%) scale(0.72);
+    z-index: 1;
+    opacity: 0.55;
+    filter: brightness(0.55);
+}
+.chapter-carousel-card[data-offset="2"] {
+    transform: translateX(125%) scale(0.72);
+    z-index: 1;
+    opacity: 0.55;
+    filter: brightness(0.55);
+}
+.chapter-carousel-card[data-offset="-3"] {
+    transform: translateX(-165%) scale(0.6);
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.chapter-carousel-card[data-offset="3"] {
+    transform: translateX(165%) scale(0.6);
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.chapter-card-image-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.chapter-card-image-layer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.65s ease;
 }
+.chapter-carousel-card:hover .chapter-card-image-layer img {
+    transform: scale(1.04);
+}
+.chapter-card-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.15) 35%,
+        rgba(8, 12, 22, 0.88) 76%,
+        rgba(8, 12, 22, 0.97) 100%
+    );
+}
+
 .chapter-panel-img-placeholder {
     width: 100%;
     height: 100%;
@@ -153,29 +260,92 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #4581F9, #F97316);
-    font-size: 6rem;
+    font-size: 9rem;
     color: #ffffffcc;
     font-family: 'satoshi-bold';
 }
-.chapter-panel-text {
+
+.chapter-card-body {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.chapter-card-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chapter-card-id {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-}
-.chapter-panel-text h3 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 0.15rem solid #4581F9;
+    backdrop-filter: blur(0.8rem);
     font-family: 'satoshi-bold';
-    font-size: 2.2rem;
-    color: #4581F9;
-    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFF;
 }
-.chapter-panel-text p {
+.chapter-card-bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.chapter-card-title {
+    font-family: 'satoshi-bold';
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #FFF;
+}
+.chapter-card-description {
     font-family: 'satoshi';
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: #353535;
+    font-size: 1.45rem;
+    line-height: 2.1rem;
+    color: rgba(255, 255, 255, 0.85);
 }
-.about-page-wrapper[data-theme='dark'] .chapter-panel-text p {
-    color: #DDD;
+
+.chapters-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+.chapter-nav-arrow-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.15rem solid #35353544;
+    background-color: transparent;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.chapter-nav-arrow-btn:hover {
+    border-color: #000;
+    background-color: #000;
+    color: #FFF;
+    transform: translateY(-0.2rem);
+}
+.about-page-wrapper[data-theme='dark'] .chapter-nav-arrow-btn {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #FFF;
+}
+.about-page-wrapper[data-theme='dark'] .chapter-nav-arrow-btn:hover {
+    border-color: #FFF;
+    background-color: #FFF;
+    color: #000;
 }
 
 /* ---- Stack ---- */
@@ -221,11 +391,10 @@
     padding: 2.8rem;
     border-radius: 1.6rem;
     border: 0.1rem solid #35353522;
-    transition: transform 200ms ease, border-color 200ms ease;
+    transition: border-color 200ms ease;
 }
 .about-principle-card:hover {
     border-color: #4581F966;
-    transform: translateY(-0.2rem);
 }
 .about-page-wrapper[data-theme='dark'] .about-principle-card {
     border-color: #ffffff22;
@@ -391,6 +560,10 @@
     text-decoration: none;
     transition: all 300ms ease-in-out;
 }
+.about-page-wrapper[data-theme='dark'] .about-cta-btn {
+    background: #FFF;
+    color: #000;
+}
 .about-cta-btn:hover {
     opacity: 0.85;
 }
@@ -398,6 +571,25 @@
 @media screen and (max-width: 1023px) {
     .about-page-container {
         padding: 4rem 8rem;
+    }
+    .chapters-carousel-stage {
+        height: 44rem;
+    }
+    .chapter-carousel-card {
+        width: 32rem;
+        height: 42rem;
+    }
+    .chapter-carousel-card[data-offset="-1"] {
+        transform: translateX(-52%) scale(0.84);
+    }
+    .chapter-carousel-card[data-offset="1"] {
+        transform: translateX(52%) scale(0.84);
+    }
+    .chapter-carousel-card[data-offset="-2"] {
+        transform: translateX(-92%) scale(0.7);
+    }
+    .chapter-carousel-card[data-offset="2"] {
+        transform: translateX(92%) scale(0.7);
     }
 }
 
@@ -409,12 +601,56 @@
         font-size: 2.6rem;
         line-height: 3.4rem;
     }
-    .chapter-panel {
-        flex-direction: column;
+    .chapters-tabs {
+        gap: 0.8rem;
+        margin-bottom: 3.2rem;
     }
-    .chapter-panel-img {
-        width: 100%;
-        height: 22rem;
+    .chapter-tab {
+        padding: 0.7rem 1.4rem;
+        font-size: 1.2rem;
+    }
+    .chapters-carousel-stage {
+        height: 40rem;
+        margin-bottom: 2.8rem;
+    }
+    .chapter-carousel-card {
+        width: 82%;
+        max-width: 30rem;
+        height: 38rem;
+        border-radius: 1.8rem;
+    }
+    .chapter-carousel-card[data-offset="-1"] {
+        transform: translateX(-22%) scale(0.88);
+        opacity: 0.45;
+    }
+    .chapter-carousel-card[data-offset="1"] {
+        transform: translateX(22%) scale(0.88);
+        opacity: 0.45;
+    }
+    .chapter-carousel-card[data-offset="-2"],
+    .chapter-carousel-card[data-offset="2"] {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.75);
+    }
+    .chapter-card-body {
+        padding: 1.8rem;
+    }
+    .chapter-card-id {
+        width: 3.4rem;
+        height: 3.4rem;
+        font-size: 1.2rem;
+    }
+    .chapter-card-title {
+        font-size: 2rem;
+    }
+    .chapter-card-description {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .chapter-nav-arrow-btn {
+        width: 3.6rem;
+        height: 3.6rem;
     }
     .about-stack-row {
         flex-direction: column;
