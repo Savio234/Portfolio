@@ -1,48 +1,48 @@
 // eslint-disable-next-line
 export default [
     {
-        name: 'Typescript',
-        level: 'Proficient'
+        name: "Typescript",
+        level: "Proficient"
     },
     {
-        name: 'Javascript',
-        level: 'Proficient'
+        name: "Javascript",
+        level: "Proficient"
     },
     {
-        name: 'HTML',
-        level: 'Experienced'
+        name: "HTML",
+        level: "Experienced"
     },
     {
-        name: 'CSS',
-        level: 'Experienced'
+        name: "CSS",
+        level: "Experienced"
     },
     {
-        name: 'SCSS',
-        level: 'Proficient'
+        name: "SCSS",
+        level: "Proficient"
     },
     {
-        name: 'Next JS',
-        level: 'Proficient'
+        name: "Next JS",
+        level: "Proficient"
     },
     {
-        name: 'React',
-        level: 'Proficient'
+        name: "React",
+        level: "Proficient"
     },
     {
-        name: 'Tailwind CSS',
-        level: 'Proficient'
+        name: "Tailwind CSS",
+        level: "Proficient"
     },
     {
-        name: 'Chakra UI',
-        level: 'Experienced'
+        name: "Chakra UI",
+        level: "Experienced"
     },
     {
-        name: 'Git',
-        level: 'Proficient'
+        name: "Git",
+        level: "Proficient"
     },
     {
-        name: 'Redux',
-        level: 'Proficient'
+        name: "Redux",
+        level: "Proficient"
     }
 ]
 // Hello there! 👋 I'm [Your Name], a passionate and detail-oriented Frontend Developer based in [Your Location]. With a love for crafting beautiful and intuitive user interfaces, I thrive on turning ideas into visually stunning, responsive, and functional web applications.

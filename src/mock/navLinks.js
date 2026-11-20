@@ -1,17 +1,17 @@
-import Resume from '../assets/pdfs/portfolio.pdf';
+import Resume from "../assets/pdfs/portfolio.pdf";
 
 // eslint-disable-next-line
 export default [
     {
-        name: 'About',
-        link: '/about'
+        name: "About",
+        link: "/about"
     },
     {
-        name: 'Work',
-        link: '/projects'
+        name: "Work",
+        link: "/work"
     },
     {
-        name: 'Resume',
+        name: "Resume",
         link: Resume,
         isExternal: true
     }

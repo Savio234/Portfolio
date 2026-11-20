@@ -9,7 +9,7 @@ const Footer = () => {
 
   const navItems = [
     { name: "About", link: "/about" },
-    { name: "Work", link: "/projects" },
+    { name: "Work", link: "/work" },
     { name: "Resume", link: Resume, isExternal: true },
   ];
   const socials = contactLinks.filter((item) => item.socials.toLowerCase() !== "gmail");

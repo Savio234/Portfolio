@@ -1,7 +1,7 @@
 import { ProjectComponent } from "../components";
 
-const Projects = () => {
+const Work = () => {
   return <ProjectComponent />;
 }
 
-export default Projects
+export default Work;

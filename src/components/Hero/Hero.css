@@ -1,6 +1,6 @@
 .hero-wrapper {
     padding: 0 12rem;
-    min-height: calc(83vh - 0rem);
+    min-height: calc(75vh - 0rem);
     display: flex;
     align-items: center;
     background: transparent;
